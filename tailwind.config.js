@@ -6,6 +6,11 @@ export default {
       colors: {
         black: "#020D19",
         blue: "#C1CFDA",
+        navy: "#000435",
+      },
+      fontFamily: {
+        dancingScript: ["Dancing Script", "cursive"],
+        playFair: ["Playfair Display", "serif"],
       },
     },
   },
