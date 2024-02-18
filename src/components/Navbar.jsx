@@ -1,27 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { CgMenuRightAlt } from "react-icons/cg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <nav className={`${isSticky ? "sticky top-0 left-0 right-0" : ""}`}>
+    <nav className="lg:border-b-2">
       <div className="bg-blue items-center flex justify-between px-8 h-16">
         <Link to="/">
           <h1 className="font-dancingScript text-3xl font-extrabold">Sarah</h1>
