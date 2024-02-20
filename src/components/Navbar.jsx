@@ -19,23 +19,19 @@ const Navbar = () => {
         {/* Styling for larger screens */}
         <ul className="text-navy hidden lg:flex justify-between w-3/5 font-playFair font-medium pl-60">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">About Me</Link>
           </li>
 
           <li>
-            <Link to="/about">About Me</Link>
+            <Link to="/proficiency">Proficiency</Link>
           </li>
 
           <li>
-            <Link to="/technologies">My Tech Stack</Link>
+            <Link to="/projects">Projects</Link>
           </li>
 
           <li>
-            <Link to="/projects">My Projects</Link>
-          </li>
-
-          <li>
-            <Link to="/blog">My Blog</Link>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
 
@@ -53,24 +49,20 @@ const Navbar = () => {
       {menuOpen && (
         <div className="mt-2 bg-blue rounded pb-8 mx-4">
           <ul className="text-navy font-playFair font-medium py-4 pl-5">
-            <li>
-              <Link to="/">Home</Link>
+            <li className="mb-2">
+              <Link to="/">About Me</Link>
             </li>
 
-            <li>
-              <Link to="/about">About Me</Link>
+            <li className="mb-2">
+              <Link to="/proficiency">Proficiency</Link>
             </li>
 
-            <li>
-              <Link to="/technologies">My Tech Stack</Link>
+            <li className="mb-2">
+              <Link to="/projects">Projects</Link>
             </li>
 
-            <li>
-              <Link to="/projects">My Projects</Link>
-            </li>
-
-            <li>
-              <Link to="/blog">My Blog</Link>
+            <li className="mb-2">
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
           <button className="border border-black px-4 py-2 ml-4 rounded-2xl text-center items-center hover:bg-black hover:text-blue font-playFair font-medium text-sm">
