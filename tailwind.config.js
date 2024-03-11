@@ -6,7 +6,7 @@ export default {
       colors: {
         black: "#020D19",
         blue: "#C1CFDA",
-        navy: "#000435",
+        gold: "#F5C014",
       },
       fontFamily: {
         dancingScript: ["Dancing Script", "cursive"],

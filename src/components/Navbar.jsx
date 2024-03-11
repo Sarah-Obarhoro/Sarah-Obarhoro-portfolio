@@ -18,7 +18,7 @@ const Navbar = () => {
 
         {/* Styling for larger screens */}
         <ul className="text-navy hidden lg:flex justify-between w-3/5 font-playFair font-medium pl-60">
-          <li>
+          <li className="">
             <Link to="/">About Me</Link>
           </li>
 
